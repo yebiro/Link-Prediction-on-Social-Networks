@@ -1,0 +1,10 @@
+{
+    "num_connected_components": 1,
+    "num_nodes": 60,
+    "num_edges": 205,
+    "density": 0.11581920903954802,
+    "diameter": 2,
+    "avg_clustering_coef": 0.6556880557441126,
+    "avg_degree": 6.833333333333333,
+    "transitivity": 0.3016330451488953
+}

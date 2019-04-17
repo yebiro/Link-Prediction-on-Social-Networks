@@ -1,0 +1,9 @@
+num_weakly_connected_components: 4
+num_strongly_connected_components: 23571
+num_nodes: 23628
+num_edges: 39242
+density: 7.029356831082109e-05
+avg_clustering_coef: 0.10909241442102431
+avg_degree: 3.3216522769595396
+transitivity: 0.0007761276510599295
+diameter: None
