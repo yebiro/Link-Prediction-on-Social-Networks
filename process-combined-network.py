@@ -1,5 +1,5 @@
-# Combine all ego networks (including node features) and store in (adj, features) tuple
-# Adapted from: https://github.com/jcatw/snap-facebook
+# 组合所有自我中心网络（包括节点特征）并保存为（adj，features）元组
+# 参考自: https://github.com/jcatw/snap-facebook
 
 import networkx as nx
 import numpy as np

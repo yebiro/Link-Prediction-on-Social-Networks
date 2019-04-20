@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52bfca70-db4e-409c-a6bb-903219f0ea5e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/brightkite/brightkite-adj.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/brightkite/brightkite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dnc/dnc-adj.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dnc/dnc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flights/flights.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/jazz/jazz-adj.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/jazz/jazz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/karate/karate-adj.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/karate/karate.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/youtube/youtube-adj.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/youtube/youtube.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.citeseer.allx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.citeseer.graph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.citeseer.test.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.citeseer.tx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.citeseer.x" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.cora.allx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.cora.graph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.cora.test.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.cora.tx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.cora.x" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.pubmed.allx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.pubmed.graph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.pubmed.test.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.pubmed.tx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/data/ind.pubmed.x" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/initializations.py" beforeDir="false" afterPath="$PROJECT_DIR$/gae/initializations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/input_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/gae/input_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gae/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/gae/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link_prediction_scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/link_prediction_scores.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/er-large-statistics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/er-large-statistics.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/er-large-statistics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/er-small-statistics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/er-small-statistics.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/er-small-statistics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/jazz-statistics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/karate-statistics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/ws-large-statistics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/ws-large-statistics.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/ws-large-statistics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/ws-small-statistics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/ws-small-statistics.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-statistics/ws-small-statistics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network-visualizations-statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/network-visualizations-statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-combined-network.py" beforeDir="false" afterPath="$PROJECT_DIR$/process-combined-network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-fb-networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/process-fb-networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-others-network.py" beforeDir="false" afterPath="$PROJECT_DIR$/process-others-network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-1-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-2-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-3-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-4-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-5-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-6-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-7-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/nx-experiment-8-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/107.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/1684.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/1912.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/3437.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/348.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/686.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/Facebook, VGAE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/Facebook, aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/Facebook, jc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/Facebook, pa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/examplePR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/hamster.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/tables/ws.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-fb-experiment-0-results.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/txt/txt-fb-experiment-0-results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-1-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-2-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-3-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-4-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-5-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-6-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-7-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/txt/txt-nx-experiment-8-results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-all-experiments.py" beforeDir="false" afterPath="$PROJECT_DIR$/run-all-experiments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-others-experiments.py" beforeDir="false" afterPath="$PROJECT_DIR$/run-others-experiments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot-curves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits-fb.py" beforeDir="false" afterPath="$PROJECT_DIR$/train-test-splits-fb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits-others.py" beforeDir="false" afterPath="$PROJECT_DIR$/train-test-splits-others.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-0-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-0-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-0-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-107-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-107-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-107-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-1684-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-1684-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-1684-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-1912-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-1912-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-1912-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-3437-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-3437-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-3437-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-348-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-348-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-348-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-3980-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-3980-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-3980-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-414-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-414-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-414-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-686-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-686-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-686-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-698-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-698-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-698-0.75-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-combined-0.25-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-combined-0.5-hidden.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train-test-splits/fb-combined-0.75-hidden.pkl" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Link_Prediction_on_Social_Networks$train_test_splits_fb.coverage" NAME="train-test-splits-fb Coverage Results" MODIFIED="1555485043345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="link_prediction_scores.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/link_prediction_scores.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding>
+                <element signature="e#919#1945#0" />
+                <element signature="e#15384#15493#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="optimizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gae/optimizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-396" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gae/preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8975">
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initializations.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gae/initializations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gae/input_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gae/layers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gae/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2612">
+              <folding>
+                <element signature="e#0#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gae/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="txt-fb-experiment-0-results.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/txt/txt-fb-experiment-0-results.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="815" column="33" selection-start-line="815" selection-start-column="33" selection-end-line="815" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot-curves.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plot-curves.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>-0</find>
+      <find>-0-</find>
+      <find>-107-</find>
+      <find>-348-</find>
+      <find>-414-</find>
+      <find>-686-</find>
+      <find>-698-</find>
+      <find>-1684-</find>
+      <find>-1912-</find>
+      <find>-3437-</find>
+      <find>-3980-</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/train-test-splits-others.py" />
+        <option value="$PROJECT_DIR$/process-fb-networks.py" />
+        <option value="$PROJECT_DIR$/process-combined-network.py" />
+        <option value="$PROJECT_DIR$/process-others-network.py" />
+        <option value="$PROJECT_DIR$/train-test-splits-fb.py" />
+        <option value="$PROJECT_DIR$/run-all-experiments.py" />
+        <option value="$PROJECT_DIR$/run-others-experiments.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/network-visualizations-statistics.py" />
+        <option value="$PROJECT_DIR$/gae/train.py" />
+        <option value="$PROJECT_DIR$/results/txt/txt-fb-experiment-0-results.json" />
+        <option value="$PROJECT_DIR$/plot-curves.py" />
+        <option value="$PROJECT_DIR$/link_prediction_scores.py" />
+        <option value="$PROJECT_DIR$/gae/initializations.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Link-Prediction-on-Social-Networks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Link-Prediction-on-Social-Networks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Link-Prediction-on-Social-Networks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Link-Prediction-on-Social-Networks" type="462c0819:PsiDirectoryNode" />
+              <item name="gae" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="train-test-splits-fb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Link-Prediction-on-Social-Networks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train-test-splits-fb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train-test-splits-fb" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52bfca70-db4e-409c-a6bb-903219f0ea5e" name="Default" comment="" />
+      <created>1555484017904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555484017904</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12884334" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44749597" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/link_prediction_scores.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4796">
+          <caret line="382" column="15" selection-start-line="382" selection-start-column="15" selection-end-line="382" selection-end-column="15" />
+          <folding>
+            <element signature="e#919#1945#0" />
+            <element signature="e#15384#15493#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-all-experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="78" column="89" selection-start-line="78" selection-start-column="80" selection-end-line="78" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/txt/txt-fb-experiment-0-results.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17930">
+          <caret line="815" column="33" lean-forward="true" selection-start-line="815" selection-start-column="33" selection-end-line="815" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/link_prediction_scores.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8404">
+          <caret line="382" column="15" lean-forward="true" selection-start-line="382" selection-start-column="15" selection-end-line="382" selection-end-column="15" />
+          <folding>
+            <element signature="e#919#1945#0" />
+            <element signature="e#15384#15493#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-all-experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="78" column="89" selection-start-line="78" selection-start-column="80" selection-end-line="78" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process-fb-networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process-combined-network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train-test-splits-others.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process-others-network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train-test-splits-fb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-others-experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network-visualizations-statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="146" column="8" lean-forward="true" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-all-experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="78" column="89" selection-start-line="78" selection-start-column="80" selection-end-line="78" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/txt/txt-fb-experiment-0-results.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="815" column="33" selection-start-line="815" selection-start-column="33" selection-end-line="815" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot-curves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/sklearn/metrics/ranking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="243" column="4" selection-start-line="243" selection-start-column="4" selection-end-line="243" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/link_prediction_scores.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#919#1945#0" />
+            <element signature="e#15384#15493#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/input_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/initializations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2612">
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8975">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gae/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
