@@ -18,14 +18,14 @@ from sklearn.metrics import average_precision_score
 from gae.optimizer import OptimizerAE, OptimizerVAE
 from gae.input_data import load_data
 from gae.model import GCNModelAE, GCNModelVAE
-from gae.preprocessing import preprocess_graph, construct_feed_dict, sparse_to_tuple, mask_test_edges
+from gae.preprocessing_gae import preprocess_graph, construct_feed_dict, sparse_to_tuple, mask_test_edges
 
 def draw_gae_training(dataset, epochs, train_loss, train_acc, val_roc, val_ap):
     # plot the training loss and accuracy
     myfont = {'family': 'Times New Roman',
               'size': 13,
     }
-    fig = plt.figure(figsize=(4, 4), dpi=1200)
+    fig = plt.figure(figsize=(4.5, 4.5), dpi=1200)
     ax1 = fig.add_subplot(111)
     ax2 = ax1.twinx()
     l1,= ax1.plot(np.arange(0, epochs), train_loss, label="train_loss")
@@ -36,31 +36,31 @@ def draw_gae_training(dataset, epochs, train_loss, train_acc, val_roc, val_ap):
     ax2.set_ylabel('train accuracy')
 
     plt.legend([l1, l2],['train_loss', 'train_accuracy'], loc="center right")
-    plt.savefig("result/tables_test/{}_loss_accuracy.svg".format(dataset), format='svg')
+    plt.savefig("result/tables/{}_loss_accuracy.svg".format(dataset), format='svg')
 #    plt.show()
 
 
-    # plt.style.use("ggplot")
-    # plt.figure(figsize=(4, 4), dpi=1200)
-    # plt.plot(np.arange(0, epochs), val_roc, label="val_auc")
-    # #plt.title("Training Loss and Accuracy on sar classifier")
-    # # plt.xticks(fontsize=12, fontweight='bold')
-    # # plt.yticks(fontsize=12, fontweight='bold')
-    # plt.xlabel("Epoch")
-    # plt.ylabel("Area under Curve")
-    # plt.legend(loc="center right")
-    # plt.savefig("result/tables_test/{}_val_roc.svg".format(dataset), format='svg')
+
+    plt.figure(figsize=(4.5, 4.5), dpi=1200)
+    plt.plot(np.arange(0, epochs), val_roc, label="val_auc")
+    #plt.title("Training Loss and Accuracy on sar classifier")
+    # plt.xticks(fontsize=12, fontweight='bold')
+    # plt.yticks(fontsize=12, fontweight='bold')
+    plt.xlabel("Epoch")
+    plt.ylabel("Area under Curve")
+    plt.legend(loc="center right")
+    plt.savefig("result/tables/{}_val_roc.svg".format(dataset), format='svg')
    # plt.show()
 
-    # plt.figure(figsize=(4, 4), dpi=1200)
-    # plt.plot(np.arange(0, epochs), val_ap, label="val_ap")
-    # # plt.title("Training Loss and Accuracy on sar classifier")
-    # # plt.xticks(fontsize=12, fontweight='bold')
-    # # plt.yticks(fontsize=12, fontweight='bold')
-    # plt.xlabel("Epoch")
-    # plt.ylabel("Average Accuracy")
-    # plt.legend(loc="center right")
-    # plt.savefig("result/tables_test/{}_val_ap.svg".format(dataset), format='svg')
+    plt.figure(figsize=(4.5, 4.5), dpi=1200)
+    plt.plot(np.arange(0, epochs), val_ap, label="val_ap")
+    # plt.title("Training Loss and Accuracy on sar classifier")
+    # plt.xticks(fontsize=12, fontweight='bold')
+    # plt.yticks(fontsize=12, fontweight='bold')
+    plt.xlabel("Epoch")
+    plt.ylabel("Average Accuracy")
+    plt.legend(loc="center right")
+    plt.savefig("result/tables/{}_val_ap.svg".format(dataset), format='svg')
     # plt.show()
 
 # Settings
@@ -77,8 +77,8 @@ flags.DEFINE_string('model', 'gcn_ae', 'Model string.')
 flags.DEFINE_string('dataset', 'hamster', 'Dataset string.')
 flags.DEFINE_integer('datatype', 1, 'Datatype.')
 flags.DEFINE_integer('features', 0, 'Whether to use features (1) or not (0).')
-datasets = [0, 107, 1684, 1912, 3437, 348, 3980, 414, 686, 698, 'facebook', 'twitter', 'gplus', 'hamster', 'advogato']
-# datasets = [0]
+#datasets = [0, 107, 1684, 1912, 3437, 348, 3980, 414, 686, 698, 'facebook', 'twitter', 'gplus', 'hamster', 'advogato']
+datasets = [348]
 
 for dataset_str in datasets:
     model_str = FLAGS.model

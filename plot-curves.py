@@ -11,7 +11,7 @@ RANDOM_SEED = 0
 # 绘制ROC曲线和PR曲线
 # 打开facebook链路预测结果
 fb_results = None
-with open('./results/fb-experiment-1-results.pkl', 'rb') as f:
+with open('./results/fb-experiment-4-results.pkl', 'rb') as f:
     fb_results = pickle.load(f, encoding='latin1')
 
 
@@ -23,7 +23,7 @@ def show_roc_curve(graph_name, frac_hidden, method):
     test_roc = results_dict[method]['test_roc']
     fpr, tpr, _ = roc_curve
 
-    plt.figure(figsize=(12, 9))
+    plt.figure()
     lw = 2
     plt.plot(fpr, tpr, color='darkorange',
        lw=lw, label='ROC curve (AUC = %0.4f)' % test_roc)
@@ -37,10 +37,10 @@ def show_roc_curve(graph_name, frac_hidden, method):
     #plt.title(title)
     plt.legend(loc="lower right")
     TABLE_RESULTS_DIR = './results/tables/' + 'ROC Facebook-{}, {}'.format(graph_name, method) +'.png'
-    plt.savefig(TABLE_RESULTS_DIR)
-    plt.show()
+    plt.savefig(TABLE_RESULTS_DIR, format='png')
+   # plt.show()
 
-#show_roc_curve('combined', 0.5, 'pa')
+show_roc_curve('combined', 0.5, 'pa')
 
 
 ##2. 绘制 PR 曲线
@@ -61,7 +61,7 @@ def show_pr_curve(graph_name, frac_hidden, method):
     test_ap3 = results_dict3[method]['test_ap']
     recall3, precision3, _ = pr_curve3
 
-    plt.figure()
+    plt.figure(figsize=(8, 6), dpi=1200)
     lw = 2
     plt.plot(recall1, precision1, color='darkorange',
        lw=lw, label='A (AP = %0.4f)' % test_ap1)
@@ -79,13 +79,13 @@ def show_pr_curve(graph_name, frac_hidden, method):
     title = 'Precision-Recall Curve '
     plt.title(title)
     plt.legend(loc="lower left")
-    TABLE_RESULTS_DIR = './results/tables/' + 'PR Facebook-{}, {}'.format('example', method) +'.png'
-    plt.savefig(TABLE_RESULTS_DIR)
-    plt.show()
+    TABLE_RESULTS_DIR = './results/tables/' + 'PR Facebook-{}, {}'.format('example', method) +'.svg'
+    plt.savefig(TABLE_RESULTS_DIR, format='svg')
+   # plt.show()
 
 # FB_EGO_USERS = [0, 107, 1684, 1912, 3437, 348, 3980, 414, 686, 698]
 # for fb in FB_EGO_USERS:
 #     show_pr_curve(fb, 0.15, 'gae_edge_emb')
-show_pr_curve('0', 0.15, 'gae_edge_emb')
+# show_pr_curve('0', 0.15, 'gae_edge_emb')
 
 
