@@ -4,7 +4,7 @@ import tensorflow as tf
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-# Base model superclass
+# 基础模型超类
 class Model(object):
     def __init__(self, **kwargs):
         allowed_kwargs = {'name', 'logging'}
@@ -27,7 +27,7 @@ class Model(object):
         raise NotImplementedError
 
     def build(self):
-        """ Wrapper for _build() """
+        """ _build() 的包装器"""
         with tf.variable_scope(self.name):
             self._build()
         variables = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES, scope=self.name)
@@ -40,7 +40,7 @@ class Model(object):
         pass
 
 
-# Graph AutoEncoder model
+# 图自编码器模型
 class GCNModelAE(Model):
     def __init__(self, placeholders, num_features, features_nonzero, 
       hidden1_dim=32, hidden2_dim=16, **kwargs):
@@ -56,7 +56,7 @@ class GCNModelAE(Model):
         self.build()
 
     def _build(self):
-        # First GCN Layer: (A, X) --> H (hidden layer features)
+        # 第一层 GCN 卷积层: (A, X) --> H (隐藏层特征表达)
         self.hidden1 = GraphConvolution(input_dim=self.input_dim,
                                               output_dim=self.hidden1_dim,
                                               adj=self.adj,
@@ -65,7 +65,7 @@ class GCNModelAE(Model):
                                               dropout=self.dropout,
                                               logging=self.logging)(self.inputs)
 
-        # Second GCN Layer: (A, H) --> Z (mode embeddings)
+        #  第二层 GCN 卷积层: (A, H) --> Z (模型嵌入)
         self.embeddings = GraphConvolution(input_dim=self.hidden1_dim,
                                            output_dim=self.hidden2_dim,
                                            adj=self.adj,
@@ -73,16 +73,16 @@ class GCNModelAE(Model):
                                            dropout=self.dropout,
                                            logging=self.logging)(self.hidden1)
 
-        # Z_mean for AE. No noise added (because not a VAE)
+        # Z_mean用于AE，没有添加噪音（因为不是VAE）
         self.z_mean = self.embeddings
 
-        # Inner-Product Decoder: Z (embeddings) --> A (reconstructed adj.)
+        # 内积解码器: Z (嵌入) --> A (重建邻接矩阵)
         self.reconstructions = InnerProductDecoder(input_dim=self.hidden2_dim,
                                       act=lambda x: x,
                                       logging=self.logging)(self.embeddings)
 
 
-# Graph Variational Auto-Encoder model
+# 变分图自编码器模型
 class GCNModelVAE(Model):
     def __init__(self, placeholders, num_features, num_nodes, features_nonzero, 
       hidden1_dim=32, hidden2_dim=16, flatten_output=True, dtype=tf.float32, **kwargs):
@@ -101,7 +101,7 @@ class GCNModelVAE(Model):
         self.build()
 
     def _build(self):
-        # First GCN Layer: (A, X) --> H (hidden layer features)
+        # 第一层 GCN 卷积层: (A, X) --> H (隐藏层特征表达)
         self.hidden1 = GraphConvolution(input_dim=self.input_dim,
                                               output_dim=self.hidden1_dim,
                                               adj=self.adj,
@@ -111,7 +111,7 @@ class GCNModelVAE(Model):
                                               dtype=self.dtype,
                                               logging=self.logging)(self.inputs)
 
-        # Second GCN Layer: (A, H) --> Z_mean (node embeddings)
+        #  第二层 GCN 卷积层: (A, H) --> Z (节点嵌入)
         self.z_mean = GraphConvolution(input_dim=self.hidden1_dim,
                                        output_dim=self.hidden2_dim,
                                        adj=self.adj,
@@ -120,7 +120,7 @@ class GCNModelVAE(Model):
                                        dtype=self.dtype,
                                        logging=self.logging)(self.hidden1)
 
-        # Also second GCN Layer: (A, H) --> Z_log_stddev (for VAE noise)
+        # 还是第二层 GCN 卷积层: (A, H) --> Z_log_stddev (for VAE noise)
         self.z_log_std = GraphConvolution(input_dim=self.hidden1_dim,
                                           output_dim=self.hidden2_dim,
                                           adj=self.adj,
@@ -129,10 +129,10 @@ class GCNModelVAE(Model):
                                           dtype=self.dtype,
                                           logging=self.logging)(self.hidden1)
 
-        # Sampling operation: z = z_mean + (random_noise_factor) * z_stddev
+        # 采样操作: z = z_mean + (random_noise_factor) * z_stddev
         self.z = self.z_mean + tf.random_normal([self.n_samples, self.hidden2_dim], dtype=self.dtype) * tf.exp(self.z_log_std)
 
-        # Inner-Product Decoder: Z (embeddings) --> A (reconstructed adj.)
+        # 内积解码器: Z (嵌入) --> A (重建邻接矩阵)
         self.reconstructions = InnerProductDecoder(input_dim=self.hidden2_dim,
                                       act=lambda x: x,
                                       flatten=self.flatten_output,

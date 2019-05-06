@@ -3,14 +3,14 @@ import tensorflow as tf
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-# Graph AE: use Weighted-cross-entropy loss
+# 图自编码器: 使用加权交叉熵损失
 class OptimizerAE(object):
     def __init__(self, preds, labels, pos_weight, norm, learning_rate=0.001):
         preds_sub = preds
         labels_sub = labels
 
         self.cost = norm * tf.reduce_mean(tf.nn.weighted_cross_entropy_with_logits(logits=preds_sub, targets=labels_sub, pos_weight=pos_weight))
-        self.optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)  # Adam Optimizer
+        self.optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)  # Adam 优化器
 
         self.opt_op = self.optimizer.minimize(self.cost)
         self.grads_vars = self.optimizer.compute_gradients(self.cost)
@@ -20,7 +20,7 @@ class OptimizerAE(object):
         self.accuracy = tf.reduce_mean(tf.cast(self.correct_prediction, tf.float32))
 
 
-# Graph VAE: use weighted-cross-entropy loss + KL Divergence
+# 变分图自编码器: 使用加权交叉熵损失 + KL 散度
 class OptimizerVAE(object):
     def __init__(self, preds, labels, model, num_nodes, pos_weight, norm, learning_rate=0.001, dtype=tf.float32):
         preds_sub = preds
@@ -31,9 +31,9 @@ class OptimizerVAE(object):
         print('Preds shape: ', preds_sub.shape)
 
         self.cost = norm * tf.reduce_mean(tf.nn.weighted_cross_entropy_with_logits(logits=preds_sub, targets=labels_sub, pos_weight=pos_weight))
-        self.optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)  # Adam Optimizer
+        self.optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)  # Adam 优化器
 
-        # Latent loss
+        # 潜在损失
         self.log_lik = self.cost
         self.kl = (0.5 / num_nodes) * tf.reduce_mean(tf.reduce_sum(1 + 2 * model.z_log_std - tf.square(model.z_mean) -
                                                                    tf.square(tf.exp(model.z_log_std)), 1))
